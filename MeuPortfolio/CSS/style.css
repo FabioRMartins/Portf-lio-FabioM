@@ -244,7 +244,7 @@ body:after {
 .section_about .titulo_about {
     display: flex;
     font-size: 5.5em;
-    color: rgba(255, 255, 255, 0.08);
+    color: #ffffff3b;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -309,7 +309,7 @@ body:after {
 .titulo {
     display: flex;
     font-size: 2.5em;
-    color: rgba(255, 255, 255, 0.08);
+    color: #ffffff3b;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
@@ -356,7 +356,7 @@ body:after {
 .titulo_projetos {
     display: flex;
     font-size: 2.5em;
-    color: rgba(255, 255, 255, 0.08);
+    color: #ffffff3b;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
