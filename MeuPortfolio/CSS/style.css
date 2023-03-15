@@ -28,9 +28,9 @@ body:before {
     left: -100px;
     bottom: 0;
     content: '';
-    width: 400px;
-    height: 400px;
-    border: 3px solid rgba(255, 255, 255, 0.05);
+    width: 500px;
+    height: 500px;
+    border: 4px solid rgba(255, 255, 255, 0.05);
     z-index: -1;
     -webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -45,9 +45,9 @@ body:after {
     right: -50px;
     bottom: 0;
     content: '';
-    width: 400px;
-    height: 600px;
-    border: 3px solid rgba(255, 255, 255, 0.05);
+    width: 500px;
+    height: 500px;
+    border: 4px solid rgba(255, 255, 255, 0.05);
     z-index: -1;
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
@@ -76,7 +76,7 @@ body:after {
     height: 9rem;
     z-index: 10000;
     background-color: #121212;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
 }
@@ -169,9 +169,9 @@ body:after {
     top: -.7rem;
 }
 
-/*//////////////////////// SEÇÃO SOBRE ////////////////////////*/
+/*//////////////////////// SEÇÃO FIRST ////////////////////////*/
 
-.section_sobre {
+.section_first {
     display: flex;
     height: 100vh;
     flex-direction: column;
@@ -181,7 +181,7 @@ body:after {
     align-items: center;
 }
 
-.container_sobre {
+.container_first {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,20 +193,19 @@ body:after {
 
 .container_name {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 
-.container_name .sobre_name {
+.container_name .name_first {
     font-size: 4rem;
     font-weight: 200;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.section_sobre .container_sobre .sobre_titulo {
+.section_first .container_first .titulo_first {
     display: flex;
     align-items: center;
     font-weight: 200;
@@ -217,7 +216,7 @@ body:after {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.section_sobre .container_sobre .sobre_titulo .sobre_name {
+.section_first .container_first .titulo_first .name_first {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -234,46 +233,68 @@ body:after {
     font-size: 4rem;
 }
 
-.section_sobre .container_sobre .sobre_descricao {
+.section_first .container_first .descricao_first {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    padding: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgba(255, 255, 255, 0.6);
 }
 
 /*//////////////////////// SEÇÃO SOBRE ////////////////////////*/
 
-.about {
+.section_about .titulo_about {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    font-size: 5.5em;
+    color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
+    justify-content: center;
 }
 
-.section_sobre .container_sobre .sobre_descricao-2 {
+.section_about .container_about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    align-items: center;
+}
+
+.section_about .descricao_about {
     font-size: 2rem;
-    max-width: 80%;
-    padding: 1rem 1rem 1rem 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    width: 60%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 4rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.contact a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #6ec99c;
 }
 
 .container_redes_sociais {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 30rem;
-    margin-top: 4rem;
-    margin-bottom: 8rem;
+    gap: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 
 /*//////////////////////// SEÇÃO SKILLS ////////////////////////*/
+
+.br {
+    display: flex;
+}
 .skills_img {
     width: 100%;
 }
@@ -287,13 +308,11 @@ body:after {
 
 .titulo {
     display: flex;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 200;
-    color: #6ec99c;
-    justify-content: center;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
     align-items: center;
-    padding: 4rem;
+    justify-content: center;
 }
 
 .container_conhecimento {
@@ -303,14 +322,13 @@ body:after {
     align-content: flex-start;
     justify-content: center;
     padding: 4rem;
-    background-color: #121212;
 }
 
 .box_conhecimento {
     width: 30rem;
     height: 7rem;
     border-radius: 1rem;
-    background: #ffffff05;
+    background: #171717;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,14 +355,12 @@ body:after {
 
 .titulo_projetos {
     display: flex;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 200;
-    color: #6ec99c;
-    justify-content: center;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
     align-items: center;
-    padding: 4rem;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .container_projetos {
