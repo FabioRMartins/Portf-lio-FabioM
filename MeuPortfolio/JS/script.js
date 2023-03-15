@@ -1,3 +1,1 @@
-const buttonDropdown = document.querySelector(".button_header");
-const menuDropdown = document.querySelector(".menu_header");
-buttonDropdown.addEventListener("click", ()=> menuDropdown.classList.toggle("active"));
+document.querySelector(".button_header").addEventListener("click", ()=> document.querySelector(".menu_header").classList.toggle("active"));
