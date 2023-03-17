@@ -87,7 +87,7 @@ body:after {
     align-items: center;
     position: relative;
     width: 95%;
-    padding: 1rem 0rem 0rem 0rem;    ;
+    padding: 1rem 0rem 0rem 0rem;
 }
 
 .container_header .logo_header {
@@ -306,43 +306,41 @@ body:after {
     font-size: 1.8rem;
 }
 
-.copy_text {
+.copy_link {  
     display: flex;
+    gap:1rem;
+}
+  
+.copy_link_input {
+    text-align: center;
+    flex-grow: 1;
+    padding: 2px;
     font-size: 1.5rem;
-    gap: 2rem;
+    border-right: none;
+    outline: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6)
 }
-
-.copy_text a {
+  
+.copy_link_button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
     display: flex;
-    width: 100%;
-    background-color: transparent;
-    color: #6ec99c;
-    font-size: 1.8rem;
-}
-
-.btn_email {
-    padding: -1px;
-    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    background: #dddddd;
+    color: #333333;
+    outline: none;
     cursor: pointer;
+}
+  
+.copy_link_button:hover {
+    background: #cccccc;
+}
+
+.material_icons {
     background: #121212;
-    width: 60px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.btn_email::before {
-    content: 'Copied!';
-    position: relative;
-    background: #6ec99c;
-    padding: 4px 5px;
-    border-radius: 20px;
-    font-size: 10px;
-    top: 55px;
-}
-
-
-.icon_email {
-    width: 30px;
 }
 
 .container_redes_sociais {
