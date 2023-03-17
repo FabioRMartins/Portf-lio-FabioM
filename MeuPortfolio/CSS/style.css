@@ -73,7 +73,6 @@ body:after {
 
 .header {
     width: 100%;
-    height: 9rem;
     z-index: 10000;
     background-color: #121212;
     box-shadow: 1px 10px 10px 10px rgba(0, 0, 0, 0.5);
@@ -188,7 +187,7 @@ body:after {
     justify-content: center;
     padding: 2rem;
     color: white;
-    height: 100%;
+    height: 100vh;
 }
 
 .container_name {
@@ -241,37 +240,60 @@ body:after {
 
 /*//////////////////////// SEÇÃO SOBRE ////////////////////////*/
 
-.section_about .titulo_about {
+.section_about {
+    display: flex;
+    justify-content: center;
+}
+
+.container_about {
+    display: flex;
+    padding: 2rem;
+    margin-top: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_about {
     display: flex;
     font-size: 5.5em;
     color: #ffffff3b;
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
-.section_about .container_about {
+
+
+.container_text_about {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 2rem;
-    align-items: center;
-}
-
-.section_about .descricao_about {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    width: 60%;
+    width: 70%;
+    flex-direction: column;
+}
+
+.text_about {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 1.8rem;
 }
 
 .contact {
     display: flex;
-    flex-direction: row;
     gap: 1rem;
     margin-top: 4rem;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .contact a {
@@ -281,6 +303,46 @@ body:after {
     justify-content: center;
     gap: 1rem;
     color: #6ec99c;
+    font-size: 1.8rem;
+}
+
+.copy_text {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.copy_text a {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    color: #6ec99c;
+    font-size: 1.8rem;
+}
+
+.btn_email {
+    padding: -1px;
+    border-radius: 100px;
+    cursor: pointer;
+    background: #121212;
+    width: 60px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.btn_email::before {
+    content: 'Copied!';
+    position: relative;
+    background: #6ec99c;
+    padding: 4px 5px;
+    border-radius: 20px;
+    font-size: 10px;
+    top: 55px;
+}
+
+
+.icon_email {
+    width: 30px;
 }
 
 .container_redes_sociais {
@@ -288,22 +350,26 @@ body:after {
     gap: 5rem;
     margin-top: 6rem;
     margin-bottom: 4rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /*//////////////////////// SEÇÃO SKILLS ////////////////////////*/
 
-.br {
-    display: flex;
-}
-.skills_img {
-    width: 100%;
-}
+
 
 .section_conhecimento {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.skills_img {
+    width: 100%;
 }
 
 .titulo {
