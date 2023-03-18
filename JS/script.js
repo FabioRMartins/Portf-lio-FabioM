@@ -82,7 +82,7 @@ function goToProject1() {
 }
 
 function goToProject2() {
-  window.location = "https://aplicativo-de-receitas.netlify.app/profile";
+  window.location = "https://wallet-lovat.vercel.app/";
 }
 
 function goToProject3() {

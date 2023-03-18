@@ -287,6 +287,15 @@ body:after {
     font-size: 1.8rem;
 }
 
+.text a {
+    color: #fff;
+    font-size: 2.4  rem;
+}
+
+.text a:hover {
+    color: #1245ff;
+}
+
 .contact {
     display: flex;
     gap: 1rem;
@@ -521,7 +530,6 @@ body:after {
     flex-direction: column;
     margin-top: 8rem;
     align-items: center;
-    height: 100vh;
 }
 
 .titulo_certificados {
@@ -553,10 +561,12 @@ body:after {
     flex-wrap: wrap;
     align-items: center;
     max-width: 25rem;
+    cursor: pointer;
 }
 
 .box_certificados:hover {
     background-color: rgba(25, 25, 117, 0.349);
+    scale: 1.4;
 }
 
 .certificado {
@@ -564,3 +574,34 @@ body:after {
     max-width: 22rem;
 }
 
+/*//////////////////////// SEÇÃO FOOTER ////////////////////////*/
+
+.footer {
+    font-size: 16px;
+    background: #121212;
+    padding: 10em 0;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.footer a {
+    color: #ffffff3b;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    color: #6ec99c;
+}
+
+.footer a:hover {
+    color: #284e96;
+}
