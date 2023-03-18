@@ -71,3 +71,20 @@ carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 carousel.addEventListener("touchend", dragStop);
 
+
+// Path: JS/script.js
+function goToProject0() {
+  window.location = "https://aplicativo-de-receitas-eosin.vercel.app/";
+}
+
+function goToProject1() {
+  window.location = "https://trivia-game-xi-neon.vercel.app/";
+}
+
+function goToProject2() {
+  window.location = "https://aplicativo-de-receitas.netlify.app/profile";
+}
+
+function goToProject3() {
+  window.location = "https://aplicativo-de-receitas.netlify.app/profile";
+}
