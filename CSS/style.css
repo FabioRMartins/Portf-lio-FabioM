@@ -409,7 +409,7 @@ body:after {
 }
 
 .box_conhecimento:hover {
-    background-color: blue;
+    background-color: rgba(25, 25, 117, 0.349);
 }
 
 .nome{
@@ -513,4 +513,54 @@ body:after {
     }
 }
 
+
+/*//////////////////////// SEÇÃO CERTIFICADOS ////////////////////////*/
+
+.section_certificados {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    align-items: center;
+    height: 100vh;
+}
+
+.titulo_certificados {
+    display: flex;
+    font-size: 2em;
+    color: #ffffff3b;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.container_certificados {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box_certificados {
+    border: 1rem solid #ffffff3b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 25rem;
+}
+
+.box_certificados:hover {
+    background-color: rgba(25, 25, 117, 0.349);
+}
+
+.certificado {
+    object-fit: cover;
+    max-width: 22rem;
+}
 

@@ -88,3 +88,23 @@ function goToProject2() {
 function goToProject3() {
   window.location = "https://aplicativo-de-receitas.netlify.app/profile";
 }
+
+
+// Path: JS/script.js
+
+function goToCertify0() {
+  window.location = "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69622762";
+}
+
+function goToCertify1() {
+  window.location = "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69622488";
+}
+
+function goToCertify2() {
+  window.location = "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69623020";
+}
+
+function goToCertify3() {
+  window.location = "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69622216";
+}
+
