@@ -337,7 +337,7 @@ body:after {
 }
   
 .copy_link_button:hover {
-    background: #cccccc;
+    background-color: #cccccc;
 }
 
 .material_icons {
@@ -351,8 +351,17 @@ body:after {
     margin-bottom: 4rem;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.btn_cv {
+    background: transparent;
+}
+
+.download_cv {
+    display: flex;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
