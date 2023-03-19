@@ -1,5 +1,13 @@
 document.querySelector(".button_header").addEventListener("click", ()=> document.querySelector(".menu_header").classList.toggle("active"));
 
+document.querySelectorAll(".menu_header a").forEach((item) => {
+  item.addEventListener("click", () => {
+    document.querySelector(".menu_header").classList.toggle("active");
+  });
+});
+
+
+// Path: JS/script.js
 document.querySelectorAll(".copy_link").forEach((copyLinkParent) => {
     const inputField = copyLinkParent.querySelector(".copy_link_input");
     const copyButton = copyLinkParent.querySelector(".copy_link_button");
@@ -48,7 +56,7 @@ var dragStart = (e) => {
 const dragging = (e) => {
   if(!isDragStart) return;
   e.preventDefault();
-  isDragging = true;
+  isDragStart = true;
   carousel.classList.add("dragging");
   positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
   carousel.scrollLeft = prevScrollLeft - positionDiff;

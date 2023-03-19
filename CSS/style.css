@@ -107,7 +107,7 @@ body:after {
     top: 7.1rem;
     right: 1rem;
     overflow-y: hidden;
-    transition: 1.5s;
+    transition: 0.5s;
     z-index: 10;
     border-radius: 2rem;
 }
@@ -329,7 +329,8 @@ body:after {
     border-right: none;
     outline: none;
     background: transparent;
-    color: rgba(255, 255, 255, 0.6)
+    color: rgba(255, 255, 255, 0.6);
+    min-width: 210px;
 }
   
 .copy_link_button {
@@ -396,6 +397,7 @@ body:after {
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .container_conhecimento {
