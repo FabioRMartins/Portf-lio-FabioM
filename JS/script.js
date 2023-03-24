@@ -116,3 +116,6 @@ function goToCertify3() {
   window.location = "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69622216";
 }
 
+function goToCertify4() {
+  window.location = "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/69622216";
+}
