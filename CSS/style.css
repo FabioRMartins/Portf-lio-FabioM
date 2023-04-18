@@ -253,12 +253,13 @@ body:after {
 .mouse::before {
     position: relative;
     content: '';
-    width: 7px;
-    height: 7px;
-    background: rgb(110 201 156 / 75%);
-    border-radius: 50%;
+    width: 5px;
+    height: 12px;
+    background: rgb(255 255 255 / 75%);
+    border-radius: 30%;
     animation: mouse 2.5s infinite;
     opacity: 1;
+    left: 2%;
 }
 
 @keyframes mouse {
